@@ -1,0 +1,26 @@
+{
+  "name": "triplet-client-ruter",
+  "version": "0.1.0",
+  "description": "Ruter client for Triplet travel planner",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toostn/triplet-client-ruter.git"
+  },
+  "keywords": [
+    "triplet",
+    "ruter"
+  ],
+  "author": "Torsten Freyhall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toostn/triplet-client-ruter/issues"
+  },
+  "homepage": "https://github.com/toostn/triplet-client-ruter#readme",
+  "dependencies": {
+    "triplet-core": "^0.1.0"
+  }
+}
