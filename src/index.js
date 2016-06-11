@@ -1,14 +1,14 @@
-var Client = require('triplet-core/client.js');
-var parsers = require('./parsers.js');
-var urlParams = require('./url-params');
+var Client = require('triplet-core/client.js')
+var parsers = require('./parsers.js')
+var urlParams = require('./url-params')
 
-var BASE_URL = 'https://reisapi.ruter.no';
+var BASE_URL = 'https://reisapi.ruter.no'
 
-function ruterUrl(endpoint) {
-  return BASE_URL + endpoint;
+function ruterUrl (endpoint) {
+  return BASE_URL + endpoint
 }
 
-module.exports = function rutClientFactory(http) {
+module.exports = function rutClientFactory (http) {
   return new Client(http, {
     shortName: 'rut',
     fullName: 'Ruter AS',
@@ -23,5 +23,5 @@ module.exports = function rutClientFactory(http) {
       coordinateSearch: true,
       quickMode: true
     }
-  });
-};
+  })
+}
