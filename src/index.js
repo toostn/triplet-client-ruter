@@ -8,7 +8,7 @@ function ruterUrl (endpoint) {
   return BASE_URL + endpoint
 }
 
-module.exports = function rutClientFactory (http) {
+module.exports = function (http) {
   return new Client(http, {
     shortName: 'rut',
     fullName: 'Ruter AS',

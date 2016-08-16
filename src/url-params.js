@@ -3,7 +3,7 @@ var UtmUtil = require('triplet-core/util/utm-util.js')
 var dtString = require('triplet-core/util/client-util.js').dtString
 var PAST_TRIP_SEARCH_TIME = 300000
 
-exports.trips = function trips (query) {
+exports.trips = function (query) {
   var params = {
     isAfter: 'True',
     proposals: query.maxResults || 6
@@ -43,7 +43,7 @@ exports.trips = function trips (query) {
   return params
 }
 
-exports.nearbyStations = function nearbyStations (query) {
+exports.nearbyStations = function (query) {
   var params = {}
   var location = query.location
 
@@ -57,7 +57,7 @@ exports.nearbyStations = function nearbyStations (query) {
   return params
 }
 
-exports.stations = function stations (query) {
+exports.stations = function (query) {
   return {id: query.queryString}
 }
 

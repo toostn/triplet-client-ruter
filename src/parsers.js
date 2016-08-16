@@ -11,13 +11,13 @@ var UtmUtil = require('triplet-core/util/utm-util.js')
 var forceArray = Utils.forceArray
 var parseDate = Utils.parseLocalDate
 
-exports.stationsError = function stationsError (json) {
+exports.stationsError = function (json) {
   return (!json || json.constructor !== Array)
     ? 'roerrorinternal'
     : undefined
 }
 
-exports.stations = function stations (json) {
+exports.stations = function (json) {
   return forceArray(json)
     .map(station)
     .filter(function (s) { return s.id !== undefined })
@@ -25,11 +25,11 @@ exports.stations = function stations (json) {
 
 exports.nearbyStationsError = exports.stationsError
 
-exports.nearbyStations = function nearbyStations (json) {
+exports.nearbyStations = function (json) {
   return forceArray(json).map(station)
 }
 
-exports.tripsError = function tripsError (json) {
+exports.tripsError = function (json) {
   return json.ReisError ? json.ReisError.Description : null
 }
 
